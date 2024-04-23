@@ -11,8 +11,10 @@ app.use(cors({
     credentials: true
 }));
 
+// connecting to mySQL database
 connectDB();
 
+// Routes
 app.use("/api/system", systemRoutes);
 app.use("/api/data", dataIngestionRoutes);
 
